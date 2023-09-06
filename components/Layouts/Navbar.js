@@ -37,15 +37,11 @@ const Navbar = () => {
 
   return (
     <>
-      <div id="navbar" className="navbar-area fixed-top">
+     <div id="navbar" className="navbar-area fixed-top">
         <nav className="navbar navbar-expand-md navbar-light">
           <div className="container">
-            <Link  
-           
-                        href="/"
-                        className={`nav-link nav-item${currentPath == "/" && "active"}`}
-                      >
-                        law
+            <Link href="/" className="navbar-brand">
+             <h1 >Lawyer</h1>
             </Link>
 
             {/* Toggle navigation */}
