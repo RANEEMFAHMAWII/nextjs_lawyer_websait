@@ -1,7 +1,7 @@
 {
-    "name": "Lawyer",
+    "name": "website",
     "version": "2.1.0",
-    "description": "",
+    "description": "lawyer",
     "main": "index.js",
     "scripts": {
         "dev": "next",
