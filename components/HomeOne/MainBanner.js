@@ -4,121 +4,76 @@ import Link from "next/link";
 const MainBanner = () => {
   return (
     <>
-      <section className="main-banner-area main-banner-area-two">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="banner-text">
-                <h1
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                  data-aos-delay="100"
-                >
-                 
-                    WELCOME TO OUR LAW FIRM!
-                </h1>
+      <section className="slider-area">
+        <Swiper
+          navigation={true}
+          autoplay={{
+            delay: 6500,
+            disableOnInteraction: true,
+            pauseOnMouseEnter: true,
+          }}
+          modules={[Navigation, Autoplay]}
+          className="hero-swiper"
+        >
+        
 
-                <p
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                  data-aos-delay="200"
-                >
-                  Your Trusted Legal Companion on the Path to justice
-                </p>
+          <SwiperSlide>
+            <div
+              className="jumpx-slider-item"
+              style={{ backgroundImage: `url(/images/carousel-1.jpg)` }}
+            >
+              <div className="d-table">
+                <div className="d-table-cell">
+                  <div className="container">
+                    <div className="jumpx-slider-text overflow-hidden two">
+                      <span>Law</span>
+                      <h1>WELCOME TO OUR LAW FIRM!</h1>
+                      <p>
+                      Your Trusted Legal Companion on the Path to justice.
+                      </p>
 
-                <div 
-                  className="banner-btn"
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                  data-aos-delay="300"
-                >
-                
+                      <div className="slider-btn">
+                       
 
-                  <Link href="" className="default-btn">
-                    Booking
-                  </Link>
+                        <Link href="/contact" className="default-btn white">
+                          Contact Us
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+          </SwiperSlide>
 
-            <div className="col-lg-6">
-              {/* Main Image */}
-              <div className="banner-main-img banner-one-main-img">
-                <img src="/images/home-two/main-img2.png" alt="Image" />
-              </div>
+          <SwiperSlide>
+            <div
+              className="jumpx-slider-item"
+              style={{ backgroundImage: `url(/images/carousel-2.jpg)` }}
+            >
+              <div className="d-table">
+                <div className="d-table-cell">
+                  <div className="container">
+                    <div className="jumpx-slider-text overflow-hidden three">
+                      <span>Law</span>
+                      <h1>WELCOME TO OUR LAW FIRM!</h1>
+                      <p>
+                      Your Trusted Legal Companion on the Path to justice.
+                      </p>
 
-              {/* Banner Shape Images */}
-              <div className="banner-img">
-                <img
-                  className="animate__animated animate__fadeInDown animate__faster"
-                  src="/images/home-two/shape1.png"
-                  alt="Image"
-                />
-
-                <div className="square-img">
-                  <img
-                    className="animate__animated animate__fadeInDown animate__delay-0.1s"
-                    src="/images/home-two/shape2.png"
-                    alt="Image"
-                  />
+                      <div className="slider-btn">
+                      
+                        <Link href="/contact" className="default-btn white">
+                          Contact Us
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-
-                <img
-                  className="animate__animated animate__fadeInDown animate__fast"
-                  src="/images/home-two/shape3.png"
-                  alt="Image"
-                />
-
-                <div className="circle-img">
-                  <img
-                    className="animate__animated animate__zoomIn animate__delay-0.1s"
-                    src="/images/home-two/shape4.png"
-                    alt="Image"
-                  />
-                </div>
-
-                <img src="/images/home-two/shape5.png" alt="Image" />
-
-                <img
-                  className="animate__animated animate__fadeInDown animate__delay-0.1s"
-                  src="/images/home-two/shape6.png"
-                  alt="Image"
-                />
-
-                <img
-                  className="animate__animated animate__fadeInDown animate__delay-0.6s"
-                  src="/images/home-two/shape7.png"
-                  alt="Image"
-                />
-
-                <img
-                  className="animate__animated animate__fadeInRight animate__delay-0.1s"
-                  src="/images/home-two/shape8.png"
-                  alt="Image"
-                />
-
-                <img
-                  className="animate__animated animate__fadeInRight animate__delay-0.1s"
-                  src="/images/home-two/shape9.png"
-                  alt="Image"
-                />
-
-                <img
-                  className="animate__animated animate__fadeInRight animate__delay-1s"
-                  src="/images/home-two/shape10.png"
-                  alt="Image"
-                />
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Shape Images */}
-        <div className="over-shape">
-          <img src="/images/home-one/shape/animate1.png" alt="Image" />
-          <img src="/images/home-one/shape/animate2.png" alt="Image" />
-          <img src="/images/home-one/shape/animate3.png" alt="Image" />
-        </div>
+          </SwiperSlide>
+        </Swiper>
       </section>
     </>
   );

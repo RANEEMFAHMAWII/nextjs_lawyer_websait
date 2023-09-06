@@ -18,26 +18,15 @@ export default function Index() {
   return (
     <>
       <Navbar />
-
       <MainBanner />
-
-     
-
       <About />
-
       <WhyChooseUs />
-
       <Services />
-
       <MakeYourBooking />
-     
       {/* <Blogs /> */}
-      <Team />
-     
-
+      <Team />   
       <News />
      {/* <Testimonials /> */}
-
      < ContactInfo />
       <Footer />
     </>
